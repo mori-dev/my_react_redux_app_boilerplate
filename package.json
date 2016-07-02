@@ -13,11 +13,13 @@
     "babel-preset-react": "^6.11.1",
     "eslint": "^3.0.0",
     "eslint-plugin-react": "^5.2.2",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "lint": "eslint ./src",
-    "start": "webpack-dev-server --progress --color --hot --host 0.0.0.0"
+    "install": "npm i eslint webpack-dev-server -g",
+    "lint": "./node_modules/eslint/bin/eslint.js ./src",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --color --hot --inline --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
