@@ -10,7 +10,7 @@ A minimal development set for ReactJS w/ babel, webpack, eslint and live-reloadi
 - eslint
 - webpack-dev-server
 
-# Usage
+## Usage
 
 ```
 git clone https://github.com/ktrysmt/react-minimal-boilerplate YOUR_APP_NAME
