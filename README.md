@@ -1,6 +1,6 @@
 # React minimal boilerplate
 
-A minimal development set for react with babel, webpack, eslint and live-reloading.
+A minimal development set for react with babel, webpack, css, eslint and live-reloading.
 
 ## Includes
 
@@ -9,6 +9,7 @@ A minimal development set for react with babel, webpack, eslint and live-reloadi
 - webpack
 - eslint
 - webpack-dev-server
+- css & style loader
 
 ## Usage
 
