@@ -1,7 +1,14 @@
 import React from 'react'
 
-export default () => {
-  return ( 
-    <h1>Hello world!</h1>
-  )
-}               
+module.exports = React.createClass({
+    getInitialState() {
+      return {
+        text: 'Hello world!'
+      }
+    },
+    render() {
+      return ( 
+        <h1>{this.state.text}</h1>
+      )  
+    }
+});

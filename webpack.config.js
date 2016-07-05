@@ -19,8 +19,5 @@ module.exports = {
         loader: 'style!css'
       }
     ]
-  },
-  devServer: {
-    contentBase: './dist',
   }
 }
