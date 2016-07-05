@@ -19,8 +19,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js ./src",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --color --hot --inline --host 0.0.0.0 --content-base dist/"
+    "lint": "eslint ./src",
+    "start": "webpack-dev-server --progress --color --hot --inline --host 0.0.0.0 --content-base dist/"
   },
   "repository": {
     "type": "git",

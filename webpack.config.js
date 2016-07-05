@@ -4,14 +4,14 @@ webpack = require('webpack');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname + '/dist/',
+    path: path.resolve('dist/'),
     filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
         test: /.jsx?$/,
-        loader: 'babel-loader',
+        loader: 'babel',
         exclude: /node_modules/
       },
       {
