@@ -4,12 +4,12 @@ A minimal development set for react with babel, webpack, css, eslint and live-re
 
 ## Includes
 
-- react
-- babel
-- webpack
-- eslint
+- React
+- Babel
+- Webpack
+- ESLint
 - webpack-dev-server
-- css & style loader
+- CSS & style loader
 
 ## Usage
 
@@ -23,7 +23,7 @@ npm start  # Run webpack-dev-server
 
 # Author
 
-@ktrysmt <kotaro.yoshimatsu@gmail.com>
+- <https://github.com/ktrysmt>
 
 # License
 
