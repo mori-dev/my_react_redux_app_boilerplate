@@ -7,8 +7,8 @@ module.exports = React.createClass({
       }
     },
     render() {
-      return ( 
+      return (
         <h1>{this.state.text}</h1>
-      )  
+      )
     }
 });
