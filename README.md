@@ -21,10 +21,10 @@ npm lint   # Lint to src
 npm start  # Run webpack-dev-server
 ```
 
-# Author
+## Author
 
 - <https://github.com/ktrysmt>
 
-# License
+## License
 
 MIT License
