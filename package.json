@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ktrysmt/react-minimal-boilerplate.git"
+    "url": "git+https://github.com:mori-dev/react-minimal-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -32,7 +32,7 @@
     "boilerplate",
     "babel"
   ],
-  "author": "Kotaro Yoshimatsu <kotaro.yoshimatsu@gmail.com> (https://github.com/ktrysmt)",
+  "author": "Kazuhiko Mori <mori.dev.asdf@gmail.com> (https://github.com/mori-dev)",
   "license": "MIT",
-  "homepage": "https://github.com/ktrysmt/react-minimal-boilerplate"
+  "homepage": "https://github.com/mori-dev/react-minimal-boilerplate"
 }
