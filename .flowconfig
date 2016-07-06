@@ -1,0 +1,7 @@
+[ignore]
+
+# 最低限必要な ignore 設定
+.*/node_modules/config-chain/*
+.*/node_modules/fbjs/*
+.*/node_modules/karma-phantomjs2-launcher/*
+.*/node_modules/npm/*

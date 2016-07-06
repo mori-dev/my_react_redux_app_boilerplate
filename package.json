@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint ./src",
     "start": "webpack-dev-server --progress --color --hot",
+    "typecheck": "./node_modules/.bin/flow check",
     "ncu": "./node_modules/.bin/ncu",
     "ncu:u": "./node_modules/.bin/ncu -u"
   },
@@ -27,6 +28,8 @@
     "eslint": "^3.0.0",
     "eslint-plugin-react": "^5.2.2",
     "espower-babel": "^4.0.3",
+    "flow-bin": "^0.28.0",
+    "flowtype": "^1.0.0",
     "json-loader": "^0.5.4",
     "karma": "^1.1.0",
     "karma-mocha": "^1.0.1",
