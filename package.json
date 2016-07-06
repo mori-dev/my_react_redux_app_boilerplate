@@ -4,7 +4,7 @@
   "description": "``` Boilerplate for React with babel and webpack ```",
   "scripts": {
     "lint": "eslint ./src",
-    "start": "webpack-dev-server --progress --color --hot --inline --host 0.0.0.0 --content-base dist/",
+    "start": "webpack-dev-server --progress --color --hot",
     "ncu": "./node_modules/.bin/ncu",
     "ncu:u": "./node_modules/.bin/ncu -u"
   },

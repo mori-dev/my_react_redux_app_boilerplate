@@ -19,5 +19,11 @@ module.exports = {
         loader: 'style!css'
       }
     ]
+  },
+  devServer: {
+    contentBase: 'dist',
+      port: 8080,
+      host: "0.0.0.0",
+      inline: true,
   }
 }
