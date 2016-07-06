@@ -14,7 +14,13 @@ module.exports = {
         loader: 'babel',
         exclude: /node_modules/,
         query:{
-          presets: ["react", "es2015", "stage-0"]
+          presets: ["react", "es2015", "stage-0"],
+          passPerPreset: true,
+          plugins: [
+            "syntax-flow",
+            "tcomb",
+            "transform-flow-strip-types"
+          ]
         }
       },
       {
