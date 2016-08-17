@@ -8,6 +8,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
+    preLoaders: [
+      { test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/ },
+    ],
     loaders: [
       {
         test: /\.js$/,
@@ -28,6 +31,10 @@ module.exports = {
         loader: 'style!css'
       }
     ]
+  },
+  eslint: {
+      configFile: './.eslintrc',
+      fix: true,
   },
   devServer: {
     contentBase: 'dist',

@@ -1,15 +1,17 @@
 // @flow
-import React from 'react'
+import React, { Component } from 'react';
 
-module.exports = React.createClass({
-    getInitialState() {
-      return {
-        text: 'Hello world!'
-      }
-    },
+class Main extends Component {
+
     render() {
-      return (
-        <h1>{this.state.text}</h1>
+        const center = { lat: 59.938043, lng: 30.337157 };
+        return (
+            <div>
+              <h1>HELLO WORLD</h1>
+            </div>
       )
     }
-});
+
+}
+
+export default Main
