@@ -4,8 +4,10 @@
   "description": "``` Boilerplate for React with babel and webpack ```",
   "scripts": {
     "lint": "eslint ./src",
-    "start": "webpack-dev-server --progress --color --hot",
     "typecheck": "./node_modules/.bin/flow check",
+    "build:dev": "webpack-dev-server --progress --color --hot",
+    "dev": "./node_modules/.bin/concurrently --kill-others \"npm run build:dev\" \"npm run watch:flow\" ",
+    "watch:flow": "./node_modules/.bin/watch 'npm run typecheck' . ",
     "ncu": "./node_modules/.bin/ncu",
     "ncu:u": "./node_modules/.bin/ncu -u"
   },
