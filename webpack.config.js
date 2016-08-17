@@ -18,9 +18,9 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /.css$/,
-        loader: 'style!css'
-      }
+          test: /\.css$/,
+          loaders: ['style', 'css?modules'],
+      },
     ]
   },
   eslint: {
