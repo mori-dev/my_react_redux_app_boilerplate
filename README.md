@@ -1,30 +1,36 @@
-# React minimal boilerplate
+# React / Redux アプリの自分用の雛形
 
-A minimal development set for react with babel, webpack, css, eslint and live-reloading.
+React / Redux アプリの自分用の雛形です。
 
-## Includes
+## ライブラリ
 
 - React
-- Babel
+- redux
+- flow
 - Webpack
 - ESLint
-- webpack-dev-server
-- CSS & style loader
+- material-ui
 
-## Usage
+他、package.json を参照して下さい。
+
+## ローカル環境ごとの定数の設定
+
+.env.sample を参考に .env を作成し、webpack.config.js 以下のような感じで設定して下さい。
 
 ```
-git clone https://github.com/ktrysmt/react-minimal-boilerplate YOUR_APP_NAME
-cd YOUR_APP_NAME
-npm i
-npm lint   # Lint to src
-npm start  # Run webpack-dev-server
+new webpack.DefinePlugin({
+    'process.env': {
+        'HOGE': JSON.stringify(process.env.HOGE),
+    },
+}),
 ```
 
-## Author
+## 作者
 
-- <https://github.com/ktrysmt>
+- <https://github.com/mori-dev>
 
-## License
+https://github.com/ktrysmt/react-minimal-boilerplate をフォークしました。
+
+## ライセンス
 
 MIT License
