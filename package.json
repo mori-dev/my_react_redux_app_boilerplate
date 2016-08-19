@@ -1,19 +1,15 @@
 {
   "name": "react-minimal-boilerplate",
   "version": "1.0.0",
-  "description": "``` Boilerplate for React with babel and webpack ```",
+  "description": "``` Boilerplate for My React.js/redux applications. ```",
   "scripts": {
-    "lint": "eslint ./src",
+    "lint": "./node_modules/.bin/eslint ./src",
     "typecheck": "./node_modules/.bin/flow check",
     "build:dev": "webpack-dev-server --progress --color --hot",
     "dev": "./node_modules/.bin/concurrently --kill-others \"npm run build:dev\" \"npm run watch:flow\" ",
     "watch:flow": "./node_modules/.bin/watch 'npm run typecheck' . ",
     "ncu": "./node_modules/.bin/ncu",
     "ncu:u": "./node_modules/.bin/ncu -u"
-  },
-  "dependencies": {
-    "react": "^15.2.0",
-    "react-dom": "^15.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -59,8 +55,10 @@
     "npm-check-updates": "^2.6.8",
     "phantomjs-prebuilt": "^2.1.7",
     "power-assert": "^1.3.1",
+    "react": "^15.2.0",
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.2.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
