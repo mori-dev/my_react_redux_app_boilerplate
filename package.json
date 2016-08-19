@@ -34,6 +34,7 @@
     "css-loader": "^0.23.1",
     "cssstyle": "^0.2.34",
     "deep-equal": "^1.0.1",
+    "dotenv": "^2.0.0",
     "enzyme": "^2.3.0",
     "eslint": "^3.0.0",
     "eslint-config-airbnb": "^10.0.1",
