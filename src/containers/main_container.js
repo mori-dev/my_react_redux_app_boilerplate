@@ -16,7 +16,6 @@ class MainContainer extends Component {
     props: {};
 
     render() {
-        const center = { lat: 59.938043, lng: 30.337157 };
         return (
             <div>
                 <AppBar title={'Template App'} />
