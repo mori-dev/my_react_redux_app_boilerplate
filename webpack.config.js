@@ -31,6 +31,7 @@ const config = {
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+                // 'HOGE': JSON.stringify(process.env.HOGE), // .env から取得した定数など
             },
         }),
     ],
