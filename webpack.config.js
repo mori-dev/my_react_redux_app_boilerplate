@@ -1,5 +1,6 @@
 path = require('path');
 webpack = require('webpack');
+const FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
 
 const config = {
     entry: ['./src/index.js'],
@@ -28,6 +29,11 @@ const config = {
             fix: true,
     },
     plugins: [
+        new webpack.NoErrorsPlugin(),
+        new FlowStatusWebpackPlugin({
+            binaryPath: './node_modules/.bin/flow',
+            failOnError: true,
+        }),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
