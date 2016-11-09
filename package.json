@@ -1,12 +1,14 @@
 {
-  "name": "react-minimal-boilerplate",
+  "name": "my_react_redux_app_boilerplate",
+  "private": true,
   "version": "1.0.0",
   "description": "``` Boilerplate for My React.js/redux applications. ```",
   "scripts": {
     "lint": "./node_modules/.bin/eslint ./src",
     "typecheck": "./node_modules/.bin/flow check",
     "build:dev": "webpack-dev-server --progress --color --hot",
-    "dev": "./node_modules/.bin/concurrently --kill-others \"npm run build:dev\" \"npm run watch:flow\" ",
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.development.js --progress --color --hot",
+    "build:prod": "rm -rf ./www/js/* && NODE_ENV=production  webpack --config webpack.config.production.js --progress --color",
     "watch:flow": "./node_modules/.bin/watch 'npm run typecheck' . ",
     "ncu": "./node_modules/.bin/ncu",
     "ncu:u": "./node_modules/.bin/ncu -u"
@@ -89,5 +91,5 @@
   ],
   "author": "Kazuhiko Mori <mori.dev.asdf@gmail.com> (https://github.com/mori-dev)",
   "license": "MIT",
-  "homepage": "https://github.com/mori-dev/react-minimal-boilerplate"
+  "homepage": "https://github.com/mori-dev/my_react_redux_app_boilerplate"
 }

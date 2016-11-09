@@ -1,16 +1,22 @@
-path = require('path');
-webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 const FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
+
+require('dotenv').config();
 
 const config = {
     entry: ['./src/index.js'],
     output: {
-        path: path.resolve('dist/'),
-        filename: 'bundle.js'
+        path: path.resolve('www/js/'),
+        filename: 'bundle.js',
     },
     module: {
         preLoaders: [
-            { test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/ },
+            {
+                test: /\.js$/,
+                loader: 'eslint-loader',
+                exclude: /node_modules/,
+            },
         ],
         loaders: [
             {
@@ -19,14 +25,18 @@ const config = {
                 exclude: /node_modules/,
             },
             {
-                    test: /\.css$/,
-                    loaders: ['style', 'css?modules'],
+                test: /\.css$/,
+                loaders: ['style', 'css?modules'],
             },
-        ]
+            {
+                test: /\.json$/,
+                loader: 'json',
+            },
+        ],
     },
     eslint: {
-            configFile: './.eslintrc',
-            fix: true,
+        configFile: './.eslintrc.yaml',
+        fix: true,
     },
     plugins: [
         new webpack.NoErrorsPlugin(),
@@ -37,16 +47,11 @@ const config = {
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-                // 'HOGE': JSON.stringify(process.env.HOGE), // .env から取得した定数など
+                'GOOGLE_MAP_API_KEY': JSON.stringify(process.env.GOOGLE_MAP_API_KEY),
+                'GOOGLE_MAPS_GEOLOCATION_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_GEOLOCATION_API_KEY),
             },
         }),
     ],
-    devServer: {
-        contentBase: 'dist',
-            port: 8080,
-            host: "0.0.0.0",
-            inline: true,
-    },
-}
+};
 
 module.exports = config;
